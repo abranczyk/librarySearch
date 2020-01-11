@@ -26,8 +26,8 @@ searchButton.click()
 
 ### UW ###
 driver3 = webdriver.Chrome()
-driver3.get('https://primo.tug-libraries.on.ca/primo_library/libweb/action/search.do?vid=WATERLOO&fromLogin=true&reset_config=true')
-searchField = driver3.find_element_by_xpath('//*[@id="search_field"]')
+driver3.get('https://lib.uwaterloo.ca/web/index.php')
+searchField = driver3.find_element_by_xpath('//*[@id="primoQueryTemp"]')
 searchField.send_keys(searchTerm)
-searchButton = driver3.find_element_by_xpath('//*[@id="goButton"]')
+searchButton = driver3.find_element_by_xpath('//*[@id="go"]')
 searchButton.click()
